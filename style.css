@@ -77,7 +77,7 @@
 
 .slider{
     width: 80vw;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     overflow-x: auto;
     margin: 10px auto;
