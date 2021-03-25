@@ -63,25 +63,53 @@
 }
 
 
+@media all and (max-width:500px){
 
-
-
-
-
-
-
-
-.cards{
-    padding: 50px;     
 }
 
-.cards .product{
-    background-color: #E9ECF5;
-    margin: 5px;
-    padding: 5px;
+
+
+
+
+
+
+
+
+.slider{
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    overflow-x: auto;
+    margin: 10px auto;
+    -webkit-overflow-scrolling: touch;
 }
+.slide{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .cards {
+    padding: 50px;
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: dense;
@@ -92,6 +120,11 @@
 }
 
 
+.cards .product{
+    background-color: #E9ECF5;
+    margin: 5px;
+    padding: 5px;
+}
 
 
 .cards img{
@@ -104,7 +137,93 @@
 
 
 
-
-.cards .product:hover img{
-    transform: scale(1.02);
+.product-name{
+    margin-top: 15px;
 }
+
+.product-name>a{
+    text-decoration: none;
+    color:lightseagreen;
+}
+
+.product-name,.product-price{
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* align-items: center; */
+    text-align: center;
+}
+
+
+.product-price button{
+    cursor: pointer;
+    width: 15%;
+    /* height: 25px; */
+    font-size: medium;
+    font-weight: 600;
+    transition-property: all;
+    transition-duration: 0.2s;
+    padding: 3px 10px;
+}
+
+
+.cards .product img:hover {
+    transform: scale(1.05);
+}
+
+
+.product-price button:hover{
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    font-size: larger;
+    height: fit-content;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer div{
+    height: 100%;
+}
+
+footer div ul{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    /* grid-auto-columns: 250px; */
+    grid-auto-rows: minmax(50px,auto);
+    list-style: none;
+    align-items: center; 
+    justify-items: center;
+}
+
+
+footer li{
+    height: 100%;
+    padding: 15px;
+}
+
+
+footer div ul li:hover{
+
+    background-color: #E9ECF5;
+}
+
+
